@@ -96,6 +96,7 @@
 				alertVisible: false,
 				title: '分案配置新增',
 				input: '',
+				options: [],
 				options1: [{
 					value: '选项1',
 					label: '急速贷'
@@ -117,6 +118,7 @@
 					value: '选项2',
 					label: '禁用'
 				}],
+				value: '',
 				value1: '',
 				value2: '',
 				value3: '',
