@@ -1,0 +1,34 @@
+@import './layout.scss';
+
+// 去除默认body的margin值
+body,h2 {
+	margin: 0;
+}
+
+// 使input框保持自适应
+.el-input{
+	width: auto!important;
+	& > input{ // 使input框保持和select框同样宽
+  		width: 198px!important;
+	}
+}
+.double-input {
+	display: flex;
+	align-item: center;
+	justify-content: center;
+	&:after{
+		order: 2;
+		content: '-';
+		line-height: 36px;
+		padding: 0 4px;
+	}
+	& > .el-input{
+		order: 1;
+		&:last-child{
+			order: 3;
+		}
+		& > input{ // 两个input框则宽度减半
+			width: 90px!important;
+		}
+	}
+}

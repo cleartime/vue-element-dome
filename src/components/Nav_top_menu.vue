@@ -1,5 +1,5 @@
 <template>
-    <div>
+  <div>
     {{title}}
   </div>
 </template>
@@ -22,7 +22,7 @@
       }
     },
     watch: {
-      '$route'() {
+      '$route' () {
         this.route_change();
       },
     }

@@ -1,0 +1,87 @@
+/** 上面部分 **/
+.top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 50px;
+  background: #009dd9;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+/** 下面部分 **/
+.bottom{
+  display: flex;
+  padding-top: 50px;
+}
+/** 左边部分 **/
+.left{
+  margin-right: 20px;
+  flex: 200px;
+}
+/** 右边部分 **/
+.right{
+  flex: auto;
+}
+
+
+
+/** 搜索部分 **/
+.search-nav, .search-btn{
+  display: flex;
+}
+// 搜索列表
+.search-nav{ 
+  flex-wrap: wrap;
+  &-item{
+    padding:15px 30px;
+    box-sizing: border-box;
+    flex: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_differ{ // 如果最后一行不超过3个，给其他多余的1或者2个item加class为_differ作特殊处理
+      width: 33%;
+      flex: none;
+    }
+  }
+}
+/** 搜索按钮和弹出框按钮 **/
+.search-btn, .f-alert-btn{
+  display: flex;
+  justify-content: center;
+  margin: 15px 15px 30px;
+  & > button{
+    margin: 0 15px
+  }
+}
+
+
+
+/** 弹出框 **/
+.f-alert{
+  margin: auto;
+  border: 1px solid #ccc;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  z-index: 4;
+  &-title{
+    background: #009dd9;
+    font-size: 16px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-weight: normal;
+  }
+  &-item{
+    padding:15px 30px;
+    box-sizing: border-box;
+    flex: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
