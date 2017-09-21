@@ -7,22 +7,22 @@
 			</div>
 			<div class="search-nav-item">
 				<span>产品：</span>
-				<el-select v-model="value" placeholder="请选择">
-					<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+				<el-select v-model="value1" placeholder="请选择">
+					<el-option v-for="item in options1" :key="item.value" :label="item.label" :value="item.value">
 					</el-option>
 				</el-select>
 			</div>
 			<div class="search-nav-item">
 				<span>催收类型：</span>
-				<el-select v-model="value" placeholder="请选择">
-					<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+				<el-select v-model="value2" placeholder="请选择">
+					<el-option v-for="item in options2" :key="item.value" :label="item.label" :value="item.value">
 					</el-option>
 				</el-select>
 			</div>
 			<div class="search-nav-item search-nav-item_differ">
 				<span>状态：</span>
-				<el-select v-model="value" placeholder="请选择">
-					<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+				<el-select v-model="value3" placeholder="请选择">
+					<el-option v-for="item in options3" :key="item.value" :label="item.label" :value="item.value">
 					</el-option>
 				</el-select>
 			</div>
@@ -96,23 +96,30 @@
 				alertVisible: false,
 				title: '分案配置新增',
 				input: '',
-				options: [{
+				options1: [{
 					value: '选项1',
-					label: '黄金糕'
+					label: '急速贷'
 				}, {
 					value: '选项2',
-					label: '双皮奶'
-				}, {
-					value: '选项3',
-					label: '蚵仔煎'
-				}, {
-					value: '选项4',
-					label: '龙须面'
-				}, {
-					value: '选项5',
-					label: '北京烤鸭'
+					label: '工薪贷'
 				}],
-				value: '',
+				options2: [{
+					value: '选项1',
+					label: '电催'
+				}, {
+					value: '选项2',
+					label: '委外'
+				}],
+				options3: [{
+					value: '选项1',
+					label: '启用'
+				}, {
+					value: '选项2',
+					label: '禁用'
+				}],
+				value1: '',
+				value2: '',
+				value3: '',
 				tableData: [{
 					clmc: '工薪贷1-7天',
 					cp: '工薪贷',
